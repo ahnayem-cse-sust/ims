@@ -1,1 +1,0 @@
-!function(e){"use strict";new PerfectScrollbar(".main-notification-list",{useBothWheelAxes:!0,suppressScrollX:!0,suppressScrollY:!1}),new PerfectScrollbar(".main-message-list",{useBothWheelAxes:!0,suppressScrollX:!0,suppressScrollY:!1})}(jQuery);
