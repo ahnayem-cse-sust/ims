@@ -3,7 +3,7 @@
 
 <!-- <div class="row row-sm justify-content-center">
     <div class="col-sm-8 col-lg-8 col-xl-8">
-        <img src="/assets/images/dashboard.jpg" alt="" srcset="">
+        <img src="{{ asset('assets/images/dashboard.jpg') }}" alt="" srcset="">
     </div>
 </div> -->
 <!-- END ROW -->

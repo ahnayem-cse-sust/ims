@@ -16,10 +16,10 @@
                         <div class="row row-sm">
                             <div class="card-body mt-2 mb-2">
                                 <div class="mobilelogo">
-                                    <img src="/assets/images/bin_ameer_tour_group.png"
+                                    <img src="{{ asset('assets/images/bin_ameer_tour_group.png') }}"
                                         class=" d-lg-none header-brand-img text-start float-start mb-4 dark-logo"
                                         alt="logo">
-                                    <img src="/assets/images/bin_ameer_tour_group.png"
+                                    <img src="{{ asset('assets/images/bin_ameer_tour_group.png') }}"
                                         class=" d-lg-none header-brand-img text-start float-start mb-4 light-logo"
                                         alt="logo">
                                 </div>
@@ -160,7 +160,7 @@
                         @endphp
                         <img src="{{ $imgUrl }}" class="header-brand-img mb-3 mt-3" style="border-radius:100%;width:100px;" alt="logo">
                         <div class="clearfix"></div>
-                        <img src="/assets/images/user.png" class="ht-250 mb-0" alt="user">
+                        <img src="{{ asset('assets/images/user.png') }}" class="ht-250 mb-0" alt="user">
                         <h2 class="mt-4 text-white tx-normal">Sign In Your Account</h2>
                         <span class="tx-white-6 tx-13 mb-5 mt-xl-0">Sign in to Create, Discover and Connect with
                             the cruds Community</span>

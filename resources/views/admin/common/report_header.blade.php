@@ -4,7 +4,7 @@
             <tr>
                 <td>
                     <p class="mb-1">
-                        <img src="/assets/images/logo/voucher_header.png" style="width:100%" alt="" srcset="">
+                        <img src="{{ asset('assets/images/logo/voucher_header.png') }}" style="width:100%" alt="" srcset="">
                     </p>
                 </td>
             </tr>

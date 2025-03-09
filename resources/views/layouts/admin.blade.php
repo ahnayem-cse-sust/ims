@@ -49,17 +49,17 @@ $main_menu = \App\Menu::where('id', isset($sub_menu) ? $sub_menu->parent_id : 0)
     <title>BITAC IMS - {{isset($sub_menu)?$sub_menu->en:""}}@yield('title')</title>
 
     <!-- BOOTSTRAP CSS -->
-    <link id="style" href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link id="style" href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- ICONS CSS -->
-    <link href="/assets/css/animate.min.css" rel="stylesheet">
-    <link href="/assets/css/icons.css" rel="stylesheet">
-    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/assets/css/plugin.css" rel="stylesheet">
+    <link href="{{ asset('assets/css/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/icons.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/plugin.css') }}" rel="stylesheet">
 
     <!-- APP CSS & APP SCSS -->
-    <link rel="stylesheet" href="/assets/css/app.0dd9712c.css">
-    <link rel="stylesheet" href="/assets/css/app.4b443544.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/app.0dd9712c.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/app.4b443544.css') }}">
 
     <style>
     .sidemenu-logo {
@@ -409,16 +409,16 @@ $main_menu = \App\Menu::where('id', isset($sub_menu) ? $sub_menu->parent_id : 0)
                     </a>
                     <div class="hor-logo">
                         <a class="main-logo" href="/">
-                            <img src="/assets/images/logo/logo.png" class="header-brand-img desktop-logo" alt="logo">
-                            <img src="/assets/images/logo/logo-light.png" class="header-brand-img desktop-logo-dark"
+                            <img src="{{ asset('assets/images/logo/logo.png') }}" class="header-brand-img desktop-logo" alt="logo">
+                            <img src="{{ asset('assets/images/logo/logo-light.png') }}" class="header-brand-img desktop-logo-dark"
                                 alt="logo">
                         </a>
                     </div>
                 </div>
                 <div class="main-header-center">
                     <div class="responsive-logo">
-                        <a href="/"><img src="/assets/images/logo/logo.png" class="mobile-logo" alt="logo"></a>
-                        <a href="/"><img src="/assets/images/logo/logo-light.png" class="mobile-logo-dark"
+                        <a href="/"><img src="{{ asset('assets/images/logo/logo.png') }}" class="mobile-logo" alt="logo"></a>
+                        <a href="/"><img src="{{ asset('assets/images/logo/logo-light.png') }}" class="mobile-logo-dark"
                                 alt="logo"></a>
                     </div>
                     <div class="input-group d-none">
@@ -720,11 +720,11 @@ $main_menu = \App\Menu::where('id', isset($sub_menu) ? $sub_menu->parent_id : 0)
                 <div class="main-sidebar-header main-container-1 active">
                     <div class="sidemenu-logo">
                         <a class="main-logo" href="/">
-                            <img src="/assets/images/logo/logo.png" class="header-brand-img desktop-logo-dark"
+                            <img src="{{ asset('assets/images/logo/logo.png') }}" class="header-brand-img desktop-logo-dark"
                                 alt="logo">
-                            <img src="/assets/images/logo/logo.png" class="header-brand-img icon-logo-dark" alt="logo">
-                            <img src="/assets/images/logo/logo.png" class="header-brand-img desktop-logo" alt="logo">
-                            <img src="/assets/images/logo/logo.png" class="header-brand-img icon-logo" alt="logo">
+                            <img src="{{ asset('assets/images/logo/logo.png') }}" class="header-brand-img icon-logo-dark" alt="logo">
+                            <img src="{{ asset('assets/images/logo/logo.png') }}" class="header-brand-img desktop-logo" alt="logo">
+                            <img src="{{ asset('assets/images/logo/logo.png') }}" class="header-brand-img icon-logo" alt="logo">
                         </a>
                     </div>
                     <div class="main-sidebar-body main-body-1">
@@ -1013,93 +1013,93 @@ $main_menu = \App\Menu::where('id', isset($sub_menu) ? $sub_menu->parent_id : 0)
     <a href="#top" id="back-to-top"><i class="fe fe-arrow-up"></i></a>
 
     <!-- JQUERY JS -->
-    <script src="/assets/js/jquery.min.js"></script>
+    <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
 
     <!-- BOOTSTRAP JS -->
-    <script src="/assets/js/popper.min.js"></script>
-    <script src="/assets/js/bootstrap.min.js"></script>
-    <script src="/assets/js/moment.min.js"></script>
-    <!-- <script src="/assets/js/bootstrap-datetimepicker.min.js"></script> -->
-    <script src="/assets/js/datepicker.js"></script>
-    <script src="/assets/js/bootstrap-datepicker.js"></script>
-    <script src="/assets/js/amazeui.datetimepicker.min.js"></script>
+    <script src="{{ asset('assets/js/popper.min.js') }}"></script>
+    <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('assets/js/moment.min.js') }}"></script>
+    <!-- <script src="{{ asset('assets/js/bootstrap-datetimepicker.min.js') }}"></script> -->
+    <script src="{{ asset('assets/js/datepicker.js') }}"></script>
+    <script src="{{ asset('assets/js/bootstrap-datepicker.js') }}"></script>
+    <script src="{{ asset('assets/js/amazeui.datetimepicker.min.js') }}"></script>
 
     <!-- INTERNAL FILEUPLOADS JS -->
-    <script src="/assets/js/fileupload.js"></script>
-    <script src="/assets/js/file-upload.js"></script>
+    <script src="{{ asset('assets/js/fileupload.js') }}"></script>
+    <script src="{{ asset('assets/js/file-upload.js') }}"></script>
 
     <!-- SELECT2 JS -->
-    <script src="/assets/js/select2.min.js"></script>
+    <script src="{{ asset('assets/js/select2.min.js') }}"></script>
 
     <!-- PERFECT-SCROLLBAR JS  -->
-    <script src="/assets/js/perfect-scrollbar.min.js"></script>
-    <script src="/assets/js/pscroll1.js"></script>
+    <script src="{{ asset('assets/js/perfect-scrollbar.min.js') }}"></script>
+    <script src="{{ asset('assets/js/pscroll1.js') }}"></script>
 
     <!-- SIDEMENU JS -->
-    <script src="/assets/js/sidemenu.js"></script>
+    <script src="{{ asset('assets/js/sidemenu.js') }}"></script>
 
     <!-- SIDEBAR JS -->
-    <script src="/assets/js/sidebar.js"></script>
+    <script src="{{ asset('assets/js/sidebar.js') }}"></script>
 
 
     <!-- INTERNAL DATA TABLES JS -->
-    <!--     <script src="/assets/js/jquery.dataTables.min.js"></script>
-    <script src="/assets/js/dataTables.bootstrap5.js"></script>
-    <script src="/assets/js/dataTables.responsive.min.js"></script> -->
+    <!--     <script src="{{ asset('assets/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('assets/js/dataTables.bootstrap5.js') }}"></script>
+    <script src="{{ asset('assets/js/dataTables.responsive.min.js') }}"></script> -->
 
-    <script src="/assets/js/jquery.toast.js"></script>
-    {{-- <script src="/assets/js/sweetalert2.all.min.js"></script> --}}
+    <script src="{{ asset('assets/js/jquery.toast.js') }}"></script>
+    {{-- <script src="{{ asset('assets/js/sweetalert2.all.min.js') }}"></script> --}}
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <script src="/assets/js/datatable/jquery.dataTables.min.js"></script>
-    <script src="/assets/js/datatable/dataTables.bootstrap5.min.js"></script>
-    <script src="/assets/js/datatable/dataTables.buttons.min.js"></script>
-    <script src="/assets/js/datatable/buttons.flash.min.js"></script>
-    <script src="/assets/js/datatable/buttons.html5.min.js"></script>
-    <script src="/assets/js/datatable/buttons.print.min.js"></script>
-    <script src="/assets/js/datatable/buttons.colVis.min.js"></script>
-    <script src="/assets/js/datatable/pdfmake.min.js"></script>
-    <script src="/assets/js/datatable/vfs_fonts.js"></script>
-    <script src="/assets/js/datatable/jszip.min.js"></script>
-    <script src="/assets/js/datatable/dataTables.select.min.js"></script>
+    <script src="{{ asset('assets/js/datatable/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('assets/js/datatable/dataTables.bootstrap5.min.js') }}"></script>
+    <script src="{{ asset('assets/js/datatable/dataTables.buttons.min.js') }}"></script>
+    <script src="{{ asset('assets/js/datatable/buttons.flash.min.js') }}"></script>
+    <script src="{{ asset('assets/js/datatable/buttons.html5.min.js') }}"></script>
+    <script src="{{ asset('assets/js/datatable/buttons.print.min.js') }}"></script>
+    <script src="{{ asset('assets/js/datatable/buttons.colVis.min.js') }}"></script>
+    <script src="{{ asset('assets/js/datatable/pdfmake.min.js') }}"></script>
+    <script src="{{ asset('assets/js/datatable/vfs_fonts.js') }}"></script>
+    <script src="{{ asset('assets/js/datatable/jszip.min.js') }}"></script>
+    <script src="{{ asset('assets/js/datatable/dataTables.select.min.js') }}"></script>
 
     <!-- INTERNAL FILEUPLOADS JS -->
-    <script src="/assets/js/fileupload.js"></script>
-    <script src="/assets/js/file-upload.js"></script>
+    <script src="{{ asset('assets/js/fileupload.js') }}"></script>
+    <script src="{{ asset('assets/js/file-upload.js') }}"></script>
 
     <!-- INTERNAL FANCY UPLOADER JS -->
-    <script src="/assets/js/jquery.ui.widget.js"></script>
-    <script src="/assets/js/jquery.fileupload.js"></script>
-    <script src="/assets/js/jquery.iframe-transport.js"></script>
-    <script src="/assets/js/jquery.fancy-fileupload.js"></script>
-    <script src="/assets/js/fancy-uploader.js"></script>
+    <script src="{{ asset('assets/js/jquery.ui.widget.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.fileupload.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.iframe-transport.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.fancy-fileupload.js') }}"></script>
+    <script src="{{ asset('assets/js/fancy-uploader.js') }}"></script>
 
     <!-- INTERNAL TELEPHONE INPUT JS -->
-    <script src="/assets/js/telephoneinput.js"></script>
+    <script src="{{ asset('assets/js/telephoneinput.js') }}"></script>
 
     <!-- INTERNAL MORRIES JS -->
-    <script src="/assets/js/raphael.min.js"></script>
-    <script src="/assets/js/morris.min.js"></script>
+    <script src="{{ asset('assets/js/raphael.min.js') }}"></script>
+    <script src="{{ asset('assets/js/morris.min.js') }}"></script>
 
     <!-- INTERNAL DASHBOARD JS -->
-    <script type="module" src="/assets/js/index.js"></script>
+    <script type="module" src="{{ asset('assets/js/index.js') }}"></script>
 
     <!-- INTERNAL CHART JS -->
-    <script src="/assets/js/Chart.bundle.min.js"></script>
+    <script src="{{ asset('assets/js/Chart.bundle.min.js') }}"></script>
 
 
     <!--- INTERNAL TREEVIEW JS -->
-    <script src="/assets/js/treeview.js"></script>
+    <script src="{{ asset('assets/js/treeview.js') }}"></script>
 
 
     <!-- STICKY JS-->
-    <script src="/assets/js/sticky.js"></script>
+    <script src="{{ asset('assets/js/sticky.js') }}"></script>
 
     <!-- APP JS -->
-    <script src="/assets/js/app.js"></script>
+    <script src="{{ asset('assets/js/app.js') }}"></script>
 
-    <script src="/assets/js/custom.js"></script>
+    <script src="{{ asset('assets/js/custom.js') }}"></script>
     <!-- END SCRIPTS -->
 
     @include('layouts.datatable')

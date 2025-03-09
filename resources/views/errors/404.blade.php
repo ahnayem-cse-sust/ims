@@ -18,16 +18,16 @@
     <title>{{__('cruds.site_title')}}</title>
 
     <!-- BOOTSTRAP CSS -->
-    <link id="style" href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link id="style" href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- ICONS CSS -->
-    <link href="/assets/css/icons.css" rel="stylesheet">
-    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/assets/css/plugin.css" rel="stylesheet">
+    <link href="{{ asset('assets/css/icons.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/plugin.css') }}" rel="stylesheet">
 
     <!-- APP CSS & APP SCSS -->
-    <link rel="stylesheet" href="/assets/css/app.0dd9712c.css">
-    <link rel="stylesheet" href="/assets/css//app.4b443544.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/app.0dd9712c.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css//app.4b443544.css') }}">
 
 
 </head>
@@ -36,7 +36,7 @@
 
     <!--- cruds LOADER -->
     <div id="cruds-loader" style="display: none;">
-        <img src="/assets/fonts/loader.svg" class="loader-img" alt="loader">
+        <img src="{{ asset('assets/fonts/loader.svg') }}" class="loader-img" alt="loader">
     </div>
     <!--- END cruds LOADER -->
 
@@ -68,26 +68,26 @@
     <!-- SCRIPTS -->
 
     <!-- JQUERY JS -->
-    <script src="/assets/js/jquery.min.js"></script>
+    <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
 
     <!-- BOOTSTRAP JS -->
-    <script src="/assets/js/popper.min.js"></script>
-    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="{{ asset('assets/js/popper.min.js') }}"></script>
+    <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
 
     <!-- PERFECT-SCROLLBAR JS -->
-    <script src="/assets/js/perfect-scrollbar.min.js">
+    <script src="{{ asset('assets/js/perfect-scrollbar.min.js') }}">
     </script>
 
     <!-- SELECT2 JS -->
-    <script src="/assets/js/select2.min.js"></script>
+    <script src="{{ asset('assets/js/select2.min.js') }}"></script>
 
 
 
     <!-- STICKY JS-->
-    <script src="/assets/js/sticky.js"></script>
+    <script src="{{ asset('assets/js/sticky.js') }}"></script>
 
     <!-- APP JS -->
-    <script type="module" src="/assets/js/app.f039afbe.js"></script>
+    <script type="module" src="{{ asset('assets/js/app.f039afbe.js') }}"></script>
 
     <!-- END SCRIPTS -->
 

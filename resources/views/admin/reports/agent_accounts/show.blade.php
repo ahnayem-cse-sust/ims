@@ -14,17 +14,17 @@
                 <tr>
                     <td>
                         <p class="mb-1">
-                            <img src="/assets/images/logo/binameeroverseasltdEn.png" alt="" srcset="">
+                            <img src="{{ asset('assets/images/logo/binameeroverseasltdEn.png') }}" alt="" srcset="">
                         </p>
                     </td>
                     <td>
                         <p class="mb-1">
-                            <img src="/assets/images/logo/main_logo.jpg" style="width: 100px" alt="" srcset="">
+                            <img src="{{ asset('assets/images/logo/main_logo.jpg') }}" style="width: 100px" alt="" srcset="">
                         </p>
                     </td>
                     <td>
                         <p class="mb-1 tx-right">
-                            <img src="/assets/images/logo/binameeroverseasltdAr.png" alt="" srcset="">
+                            <img src="{{ asset('assets/images/logo/binameeroverseasltdAr.png') }}" alt="" srcset="">
                         </p>
                     </td>
                 </tr>
