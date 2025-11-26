@@ -63,9 +63,10 @@ fieldset {
                     <div class="row">
                         <div class="col-md-3">
                             <div class="form-group">
-                                <p class="mg-b-2 tx-semibold">{{__('cruds.requisitionfor')}}
+                                <p class="mg-b-2 tx-semibold">{{__('cruds.requisitionfor')}}(<span
+                                        class="required">*</span>)
                                 </p>
-                                <select id="requisitionfor_id" name="requisitionfor_id" class="form-control select2">
+                                <select id="requisitionfor_id" name="requisitionfor_id" class="form-control select2" required>
                                     <?=options('requisitionfors', array(), array('requisitionfor_name'), 'id', '', 'id', 'asc', trans('cruds.select'), isset($requisition) ? $requisition->requisitionfor_id : 0)?>
                                 </select>
                                 @if($errors->has('requisitionfor_id'))
@@ -255,7 +256,7 @@ fieldset {
                                                     class="required">*</span>)
                                             </p>
                                             <select id="item_id" name="item_id" class="form-control select2">
-                                                <?=options('items', array(), array('item_code','item_name'), 'id', '', 'id', 'asc', trans('cruds.select'), isset($item) ? $item->subgroup_id : 0, ['item_code', 'group_id', 'subgroup_id', 'unit_id', 'sale_price', 'page_location'])?>
+                                                <?=options('items', array(), array('item_code','item_name'), 'id', '', 'id', 'asc', trans('cruds.select'), isset($item) ? $item->id : 0, ['item_code', 'group_id', 'subgroup_id', 'unit_id', 'sale_price', 'page_location'])?>
                                             </select>
                                         </div>
                                     </div>
@@ -419,6 +420,7 @@ $(document).on('change', '#item_id', function() {
     group_id = select_item.data('group_id');
     subgroup_id = select_item.data('subgroup_id');
     unit_id = select_item.data('unit_id');
+    console.log(unit_id);
     sale_price = select_item.data('sale_price');
     $('#sale_price').val(sale_price);
     $('#unit_id').val(unit_id).trigger('change');

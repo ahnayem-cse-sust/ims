@@ -416,11 +416,11 @@ $main_menu = \App\Menu::where('id', isset($sub_menu) ? $sub_menu->parent_id : 0)
                     </div>
                 </div>
                 <div class="main-header-center">
-                    <div class="responsive-logo">
+                    {{-- <div class="responsive-logo">
                         <a href="/"><img src="{{ asset('assets/images/logo/logo.png') }}" class="mobile-logo" alt="logo"></a>
                         <a href="/"><img src="{{ asset('assets/images/logo/logo-light.png') }}" class="mobile-logo-dark"
                                 alt="logo"></a>
-                    </div>
+                    </div> --}}
                     <div class="input-group d-none">
                         <input type="search" class="form-control rounded-0" placeholder="Search for anything...">
                         <button class="btn search-btn"><i class="fe fe-search"></i></button>

@@ -71,7 +71,7 @@
             @endif
         </div>
     </div>
-    <div class="col-md-3" style="display:none">
+    {{-- <div class="col-md-3" style="display:none">
         <div class="form-group {{ $errors->has('description') ? 'has-error' : '' }}">
             <p class="mg-b-2 tx-semibold">{{ trans('cruds.remarks') }}</p>
             <input type="text" id="description" name="description" class="form-control"
@@ -83,7 +83,7 @@
             </em>
             @endif
         </div>
-    </div>
+    </div> --}}
     <div class="col-md-12">
         <fieldset>
             <legend>PS items</legend>

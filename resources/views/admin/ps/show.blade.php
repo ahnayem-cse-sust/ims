@@ -55,6 +55,10 @@
                             <th>{{ __('cruds.warehouse') }}</th>
                             <td>: {{ isset($ps->warehouse)?$ps->warehouse->warehouse_name:'' }}</td>
                         </tr>
+                        <tr>
+                            <th>{{ __('cruds.remarks') }}</th>
+                            <td> {{ isset($ps->description)?$ps->description:'' }}</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -70,7 +74,7 @@
                             <th style="vertical-align: middle;" rowspan="2">{{ __('cruds.order_qty') }}</th>
                             <th>{{ __('cruds.prev_price') }}</th>
                             <th colspan="2">{{ __('cruds.current_price_filled_up_by_procurement') }}</th>
-                            <th style="vertical-align: middle;" rowspan="2">{{ __('cruds.remarks') }}</th>
+                            {{-- <th style="vertical-align: middle;" rowspan="2">{{ __('cruds.remarks') }}</th> --}}
 
                         </tr>
                         <tr>
@@ -94,8 +98,8 @@
                             </td>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
-                            <td style="text-align: right;">{{ $ps->description }}
-                            </td>
+                            {{-- <td style="text-align: right;">{{ $ps->description }}
+                            </td> --}}
                         </tr>
                         @endforeach
                         @endif

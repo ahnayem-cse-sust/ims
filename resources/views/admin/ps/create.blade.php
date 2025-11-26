@@ -113,11 +113,11 @@ fieldset {
                         <div class="col-md-3">
                             <div class="form-group">
                                 <p class="mg-b-2 tx-semibold">{{ trans('cruds.remarks') }} </p>
-                                <input type="text" id="description" name="description"
+                                <textarea rows="4" type="text" id="description" name="description"
                                     class="form-control"
                                     placeholder="{{ trans('cruds.remarks') }}" value="{{ isset($ps) ? $ps->description : '' }}"
                                     value=""
-                                    required>
+                                    required> </textarea>
                             </div>
                         </div>
                         <div class="col-md-12">
